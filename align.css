@@ -1,0 +1,47 @@
+body{
+	background-color: #1D3557;
+	color: #F1FAEE;
+	font-family: Arial;
+	margin: 0;
+	margin-bottom: 100px;
+}
+.caja{
+	width: 200px;
+	border: 1px solid #ABDADC;
+	margin-bottom: 20px;
+}
+.tipo-a{ /* Con la propiedad margin; 0 auto en elementos con propiedad relativa. */
+	margin: 0 auto;
+}
+.tipo-b{ /*Calculamos la mitad del ancho del viewport width*/
+	margin-left: calc(100vw / 2 - 100px);
+}
+.tipo-c{
+	border: 1px solid #ABDADC;
+	padding: 10px;
+	text-align: center;
+}
+.tipo-c .caja{
+	display: inline-block;
+	text-align: left;
+}
+.relative{
+	position: relative;
+	border: 1px solid #ABDADC;
+	height: 300px;
+}
+.tipo-d{ /* Estrategia más utilizada para hacer modales*/
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.tipo-e{
+	position: absolute;
+	left: 50%;
+	margin-left: -100px; /* Se le resta la mitad del ancho del elemento*/
+}
+.tipo-f{
+	display: flex;
+	justify-content: center;
+}
