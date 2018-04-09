@@ -45,3 +45,33 @@ body{
 	display: flex;
 	justify-content: center;
 }
+.tipo-g{
+	display: table;
+	width: 100%;
+	height: 400px;
+}
+.tipo-g .caja{
+	display: table-cell;
+	vertical-align: middle;
+}
+.height{
+	height: 500px;
+	background-color: #E63946;
+}
+.tipo-h{
+	box-sizing: border-box;
+	padding-top: 150px;
+}
+.tipo-i{
+	display: flex;
+	align-items: center;
+	/*justify-content: center; */
+}
+.tipo-j{ /* Funciona muy bien con botones, se coloca el mismo alto que el contenedor padre */
+	line-height: 500px; 
+	/*text-align: center; */
+}
+.tipo-k > *{ /* selector universal, para todos los elementos dentro de la clase */
+	display: inline;
+	vertical-align: middle;
+}
